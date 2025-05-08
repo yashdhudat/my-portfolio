@@ -26,7 +26,7 @@ export default function Hero() {
             className="w-full max-w-2xl text-center"
           >
             <div className="mb-6">
-              <span className="text-lg md:text-xl text-gray-600 dark:text-gray-400">Hello, I'm {personalInfo.name}. A passionate Software Engineer.</span>
+              <span className="text-lg md:text-xl text-gray-600 dark:text-gray-400">Hello, I&apos;m {personalInfo.name}. A passionate Software Engineer.</span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
