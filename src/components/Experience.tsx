@@ -1,9 +1,7 @@
 'use client';
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { experience } from '@/data/resume';
-import { FiBriefcase, FiCalendar, FiMapPin } from 'react-icons/fi';
 
 export default function Experience() {
   const [sectionRef, inView] = useInView({

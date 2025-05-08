@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { personalInfo, education } from '@/data/resume';
 import { FiUser, FiMapPin, FiMail, FiPhone, FiLinkedin } from 'react-icons/fi';
+import Image from 'next/image';
 
 export default function About() {
   const [sectionRef, inView] = useInView({
@@ -155,17 +156,19 @@ export default function About() {
                     borderRadius: '50%',
                     overflow: 'hidden',
                     background: 'white',
-                    boxShadow: '0 0 20px rgba(0, 0, 0, 0.1)'
+                    boxShadow: '0 0 20px rgba(0, 0, 0, 0.1)',
+                    position: 'relative'
                   }}>
-                    <img 
+                    <Image 
                       src="/xuefeng-palau.jpg" 
                       alt="Xuefeng Sun profile" 
+                      fill
+                      sizes="(max-width: 768px) 320px, 384px"
                       style={{
-                        width: '100%',
-                        height: '100%',
                         objectFit: 'cover',
                         objectPosition: 'center'
                       }}
+                      priority
                     />
                   </div>
                 </div>

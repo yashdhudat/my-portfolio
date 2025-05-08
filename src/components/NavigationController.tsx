@@ -1,13 +1,15 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { scrollToElement } from '@/utils/scrollUtils';
+// Remove unused import since the function isn't being used
+// import { scrollToElement } from '@/utils/scrollUtils';
 
 // Define all the section IDs in order
 const SECTIONS = ['home', 'about', 'experience', 'skills', 'projects', 'contact', 'footer'];
 
 export default function NavigationController() {
   const [currentSection, setCurrentSection] = useState('home');
+  // Keep this state variable as it's used in the detectCurrentSection function
   const [isScrolling, setIsScrolling] = useState(false);
 
   // For debugging: log section changes
@@ -76,25 +78,6 @@ export default function NavigationController() {
     
     return () => window.removeEventListener('scroll', handleScroll);
   }, [detectCurrentSection]);
-  
-  // Get the next section based on current section
-  const getNextSection = useCallback(() => {
-    const currentIndex = SECTIONS.indexOf(currentSection);
-    
-    // Safeguard against invalid indices
-    if (currentIndex === -1) {
-      console.warn('Current section not found in SECTIONS array:', currentSection);
-      return SECTIONS[0]; // Default to first section
-    }
-    
-    // If at the last section, loop back to the first section
-    if (currentIndex === SECTIONS.length - 1) {
-      return SECTIONS[0];
-    }
-    
-    // Otherwise go to the next section
-    return SECTIONS[currentIndex + 1];
-  }, [currentSection]);
   
   // NavigationController now only contains logic but no button UI
   return null;
