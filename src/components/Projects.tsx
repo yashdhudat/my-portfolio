@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { projects } from '@/data/resume';
 import { FiExternalLink, FiX } from 'react-icons/fi';
+import Image from 'next/image';
 
 export default function Projects() {
   const [sectionRef, inView] = useInView({
@@ -72,12 +73,15 @@ export default function Projects() {
                 className="bg-white dark:bg-slate-800/50 rounded-2xl shadow-lg dark:shadow-dark-lg dark:border dark:border-blue-500/10 overflow-hidden cursor-pointer transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-glow-md"
                 onClick={handleCardClick}
               >
-                <div className="aspect-video relative overflow-hidden rounded-t-2xl">
+                <div className="w-full h-full relative aspect-video rounded-t-2xl">
                   {project.image ? (
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
-                      className="object-cover w-full h-full"
+                      fill
+                      className="object-cover rounded-t-2xl"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      priority={index === 0}
                     />
                   ) : (
                     <div 
@@ -137,13 +141,18 @@ export default function Projects() {
               className="bg-white dark:bg-slate-800 w-full max-w-4xl rounded-2xl shadow-2xl dark:shadow-glow-lg overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="relative aspect-video">
+              <div className="relative w-full h-full aspect-video">
                 {projects[selectedProject].image ? (
-                  <img
-                    src={projects[selectedProject].image}
-                    alt={projects[selectedProject].title}
-                    className="object-cover w-full h-full rounded-t-2xl"
-                  />
+                  <div className="w-full h-full relative aspect-video rounded-t-2xl">
+                    <Image
+                      src={projects[selectedProject].image}
+                      alt={projects[selectedProject].title}
+                      fill
+                      className="object-cover rounded-t-2xl"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      priority
+                    />
+                  </div>
                 ) : (
                   <div 
                     className="absolute inset-0 flex items-center justify-center rounded-t-2xl"

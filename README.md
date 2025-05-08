@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern Portfolio Website
+
+A modern, animated personal portfolio website built with Next.js, TailwindCSS, and Framer Motion. This website showcases a developer's skills, experience, projects, and contact information.
+
+![Portfolio Preview](preview.png)
+
+## Features
+
+- **Responsive Design**: Works perfectly on all device sizes
+- **Modern UI**: Clean and professional design with animations
+- **Dark/Light Mode**: Theme switching functionality 
+- **Smooth Scrolling**: Navigation with smooth scrolling to sections
+- **Animated Components**: Beautiful animations using Framer Motion
+- **Contact Form**: Interactive contact form with validation
+- **Project Showcase**: Interactive project cards with modal details
+- **Performance Optimized**: Fast loading and rendering
+
+## Technologies Used
+
+- **Next.js 14**: React framework for production
+- **TypeScript**: Type-safe JavaScript
+- **Tailwind CSS**: Utility-first CSS framework
+- **Framer Motion**: Animation library
+- **React Icons**: Icon library
+- **React Scroll**: Smooth scrolling functionality
+- **React Intersection Observer**: Trigger animations on scroll
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ installed
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/portfolio-website.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd portfolio-website
+```
+
+3. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+4. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+portfolio-site/
+├── public/           # Static files
+│   ├── app/          # Next.js app directory
+│   ├── components/   # React components
+│   ├── data/         # Resume and content data
+│   ├── styles/       # Global styles
+│   ├── hooks/        # Custom React hooks
+│   └── utils/        # Utility functions
+├── tailwind.config.js # Tailwind configuration
+└── package.json      # Project dependencies
+```
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+1. Update your personal information in `src/data/resume.ts`
+2. Add your profile picture to `public/profile.png`
+3. Add your resume PDF to `public/YourName_Resume.pdf`
+4. Add project images to `public/projects/`
+5. Customize colors and styling in `tailwind.config.js` and `src/app/globals.css`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The easiest way to deploy your Next.js app is using [Vercel](https://vercel.com/), the platform from the creators of Next.js.
 
-## Deploy on Vercel
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Design inspired by [Safet Pojskic's portfolio](https://safetpojskic.com)
+- Icons from [React Icons](https://react-icons.github.io/react-icons/)
