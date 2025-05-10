@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { personalInfo, education } from '@/data/resume';
-import { FiUser, FiMapPin, FiMail, FiPhone, FiLinkedin } from 'react-icons/fi';
+import { FiUser, FiMapPin, FiMail, FiPhone, FiLinkedin, FiGithub } from 'react-icons/fi';
 import Image from 'next/image';
 
 export default function About() {
@@ -107,19 +107,36 @@ export default function About() {
                   </div>
                 </div>
                 
-                <div className="flex items-start gap-3 md:col-span-2 rounded-lg p-3 bg-gray-50 dark:bg-slate-800/80">
+                <div className="flex items-start gap-3 rounded-lg p-3 bg-gray-50 dark:bg-slate-800/80">
                   <div className="mt-1 p-1.5 bg-primary/10 dark:bg-primary/20 text-primary dark:text-blue-400 rounded-md">
                     <FiLinkedin className="text-lg" />
                   </div>
                   <div>
                     <p className="text-gray-500 dark:text-gray-400 text-xs mb-0.5">LinkedIn</p>
                     <a 
-                      href={`https://${personalInfo.linkedin}`}
+                      href={personalInfo.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="font-medium text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-blue-400 transition-colors"
                     >
-                      {personalInfo.linkedin}
+                      linkedin.com/in/xuefeng-sun-51871b1a5
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3 rounded-lg p-3 bg-gray-50 dark:bg-slate-800/80">
+                  <div className="mt-1 p-1.5 bg-primary/10 dark:bg-primary/20 text-primary dark:text-blue-400 rounded-md">
+                    <FiGithub className="text-lg" />
+                  </div>
+                  <div>
+                    <p className="text-gray-500 dark:text-gray-400 text-xs mb-0.5">GitHub</p>
+                    <a 
+                      href={personalInfo.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-blue-400 transition-colors"
+                    >
+                      github.com/Artan1ss
                     </a>
                   </div>
                 </div>

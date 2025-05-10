@@ -30,7 +30,7 @@ export default function Hero() {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-              <span className="text-gray-800 dark:text-white">Java and React/Next.js </span>
+              <span className="text-gray-800 dark:text-white">Full-Stack Javascript </span>
               <span className="text-gradient">developer</span>
             </h1>
             

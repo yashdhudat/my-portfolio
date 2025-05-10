@@ -47,15 +47,15 @@ export default function Experience() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white dark:bg-slate-800/50 dark:backdrop-blur-sm rounded-2xl shadow-lg dark:shadow-dark-lg dark:border dark:border-blue-500/10 overflow-hidden"
             >
-              <div className="p-8 flex flex-col md:flex-row gap-6">
+              <div className="p-8 flex md:flex-row gap-6">
                 {/* Left Column: Timeline */}
-                <div className="md:w-1/3 lg:w-1/4">
+                <div className="md:w-1/2 lg:w-1/2">
                   <div className="bg-gray-50 dark:bg-slate-900/60 rounded-xl p-4 transition-all duration-300">
-                    <div className="text-primary dark:text-blue-400 font-semibold text-lg md:text-xl mb-2">
-                      {exp.period}
-                    </div>
-                    <h3 className="text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100 mb-1">
+                    <div className="text-primary dark:text-blue-400 font-bold text-lg md:text-xl mb-2">
                       {exp.position}
+                    </div>
+                    <h3 className="text-lg md:text-xl font-semibold text-gray-800 dark:text-gray-100 mb-1">
+                      {exp.period}
                     </h3>
                     <div className="text-gray-600 dark:text-gray-300 mb-1">
                       {exp.company}

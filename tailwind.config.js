@@ -121,8 +121,8 @@ module.exports = {
         'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
       },
       fontFamily: {
-        sans: ['var(--font-geist-sans)'],
-        mono: ['var(--font-geist-mono)'],
+        sans: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-geist-mono)', 'monospace'],
       },
       boxShadow: {
         'glow-sm': '0 0 10px rgba(59, 130, 246, 0.2)',

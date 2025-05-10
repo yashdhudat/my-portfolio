@@ -32,7 +32,7 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="py-20 lg:py-32 bg-background/50 dark:bg-transparent relative">
+    <section id="projects" className="py-20 lg:py-32 bg-gray-50 dark:bg-slate-900/95 relative">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           ref={sectionRef}
@@ -44,14 +44,14 @@ export default function Projects() {
           <motion.h2 
             variants={fadeInUpVariant}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl font-bold text-center mb-2"
+            className="text-4xl md:text-5xl font-bold text-center mb-4"
           >
             Projects
           </motion.h2>
           <motion.div 
             variants={fadeInUpVariant}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="w-20 h-1 bg-primary mx-auto mb-10"
+            className="w-20 h-1 bg-blue-500 mx-auto mb-16"
           ></motion.div>
         </motion.div>
 
@@ -70,16 +70,16 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                 transition={{ duration: 0.5, delay: 0.2 + (index * 0.1) }}
-                className="bg-white dark:bg-slate-800/50 rounded-2xl shadow-lg dark:shadow-dark-lg dark:border dark:border-blue-500/10 overflow-hidden cursor-pointer transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:shadow-glow-md"
+                className="bg-white dark:bg-white/5 rounded-xl shadow-md overflow-hidden cursor-pointer transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
                 onClick={handleCardClick}
               >
-                <div className="w-full h-full relative aspect-video rounded-t-2xl">
+                <div className="relative w-full h-64">
                   {project.image ? (
                     <Image
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-cover rounded-t-2xl"
+                      className="object-cover"
                       sizes="(max-width: 768px) 100vw, 50vw"
                       priority={index === 0}
                     />
@@ -91,30 +91,19 @@ export default function Projects() {
                       <span className="text-2xl font-bold text-gray-800/70 dark:text-white/80">{project.title}</span>
                     </div>
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <div className="p-6">
-                      <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
-                      <p className="text-white/90 text-sm line-clamp-2">{project.description}</p>
-                    </div>
-                  </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3">{project.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">{project.description}</p>
+                  <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">{project.title}</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-5">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
-                    {project.technologies.slice(0, 3).map((tech) => (
+                    {project.technologies.map((tech) => (
                       <span 
                         key={tech} 
-                        className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-200 text-xs rounded-full"
+                        className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-sm rounded-full"
                       >
                         {tech}
                       </span>
                     ))}
-                    {project.technologies.length > 3 && (
-                      <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-200 text-xs rounded-full">
-                        +{project.technologies.length - 3}
-                      </span>
-                    )}
                   </div>
                 </div>
               </motion.div>
@@ -138,24 +127,24 @@ export default function Projects() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 50 }}
               transition={{ type: 'spring', damping: 20, stiffness: 300 }}
-              className="bg-white dark:bg-slate-800 w-full max-w-4xl rounded-2xl shadow-2xl dark:shadow-glow-lg overflow-hidden"
+              className="bg-white dark:bg-slate-800 w-full max-w-4xl rounded-2xl shadow-2xl overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="relative w-full h-full aspect-video">
                 {projects[selectedProject].image ? (
-                  <div className="w-full h-full relative aspect-video rounded-t-2xl">
+                  <div className="w-full h-full relative aspect-video">
                     <Image
                       src={projects[selectedProject].image}
                       alt={projects[selectedProject].title}
                       fill
-                      className="object-cover rounded-t-2xl"
+                      className="object-cover"
                       sizes="(max-width: 768px) 100vw, 50vw"
                       priority
                     />
                   </div>
                 ) : (
                   <div 
-                    className="absolute inset-0 flex items-center justify-center rounded-t-2xl"
+                    className="absolute inset-0 flex items-center justify-center"
                     style={{ backgroundColor: generateColor(projects[selectedProject].title, document.documentElement.classList.contains('dark')) }}
                   >
                     <span className="text-3xl font-bold text-gray-800/70 dark:text-white/80">
@@ -164,7 +153,7 @@ export default function Projects() {
                   </div>
                 )}
                 <button 
-                  className="absolute top-4 right-4 p-2 bg-black/50 dark:bg-white/10 text-white rounded-full hover:bg-black/70 dark:hover:bg-white/20 transition-colors"
+                  className="absolute top-4 right-4 p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors"
                   onClick={() => setSelectedProject(null)}
                 >
                   <FiX size={20} />
@@ -191,12 +180,12 @@ export default function Projects() {
                       href={projects[selectedProject].link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-6 py-3 bg-primary dark:bg-primary-dark text-white rounded-lg hover:bg-primary/90 dark:hover:bg-blue-500 transition-colors shadow-md hover:shadow-lg dark:shadow-glow-sm dark:hover:shadow-glow-md"
+                      className="flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors shadow-md hover:shadow-lg"
                     >
                       <FiExternalLink /> View Project
                     </a>
                   ) : (
-                    <button className="flex items-center gap-2 px-6 py-3 bg-primary dark:bg-primary-dark text-white rounded-lg hover:bg-primary/90 dark:hover:bg-blue-500 transition-colors shadow-md hover:shadow-lg dark:shadow-glow-sm dark:hover:shadow-glow-md">
+                    <button className="flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors shadow-md hover:shadow-lg">
                       <FiExternalLink /> View Project
                     </button>
                   )}

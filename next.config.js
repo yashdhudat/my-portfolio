@@ -2,7 +2,6 @@
 const nextConfig = {
   // Allow imports of components and data
   reactStrictMode: true,
-  swcMinify: true,
   
   // Allow optimization of images
   images: {
