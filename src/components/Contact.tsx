@@ -36,8 +36,19 @@ export default function Contact() {
     setSubmitError('');
 
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
+      }
       
       // Reset form after successful submission
       setFormData({ name: '', email: '', message: '' });
@@ -214,7 +225,7 @@ export default function Contact() {
 
               {submitSuccess && (
                 <div className="mb-6 p-4 bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400 rounded-lg">
-                  Your message has been sent successfully!
+                  Your message has been sent successfully! I'll get back to you soon.
                 </div>
               )}
 
