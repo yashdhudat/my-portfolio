@@ -50,10 +50,6 @@ my-portfolio/
 ├── utils/ # Utility functions
 ├── tailwind.config.js # Tailwind configuration
 └── package.json # Project dependencies
-
-yaml
-Copy code
-
 ---
 
 ## ⚙️ Getting Started  
