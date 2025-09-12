@@ -6,7 +6,7 @@ This website showcases my skills, projects, experience, and contact details in a
 ---
 
 ## 🚀 Live Demo  
-👉 [View My Portfolio](https://yashdhudat.vercel.app) *(Deployed with Vercel)*  
+👉 [View My Portfolio](https://yashdhudat.vercel.app)
 
 ---
 
