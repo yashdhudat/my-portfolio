@@ -50,6 +50,7 @@ my-portfolio/
 ├── utils/ # Utility functions
 ├── tailwind.config.js # Tailwind configuration
 └── package.json # Project dependencies
+
 ---
 
 ## ⚙️ Getting Started  
@@ -105,11 +106,4 @@ Design inspired by Safet Pojskic's portfolio
 
 Icons from React Icons
 
-yaml
-Copy code
-
 ---
-
-👉 Once you deploy to **Vercel**, you just need to update the **Live Demo link**.  
-
-Do you want me to also **add a section highlighting your skills & certifications** (like Java, Python, ML
