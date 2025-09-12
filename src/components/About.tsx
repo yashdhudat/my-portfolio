@@ -136,7 +136,7 @@ export default function About() {
                       rel="noopener noreferrer"
                       className="font-medium text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-blue-400 transition-colors"
                     >
-                      github.com/Artan1ss
+                      github.com/yashdhudat
                     </a>
                   </div>
                 </div>
@@ -177,8 +177,8 @@ export default function About() {
                     position: 'relative'
                   }}>
                     <Image 
-                      src="/xuefeng-palau.jpg" 
-                      alt="Xuefeng Sun profile" 
+                      src="/yash.jpeg" 
+                      alt="yash profile" 
                       fill
                       sizes="(max-width: 768px) 320px, 384px"
                       style={{

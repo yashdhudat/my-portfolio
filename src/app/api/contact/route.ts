@@ -25,7 +25,7 @@ export async function POST(req: Request) {
     // Email content
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'xuefeng0580@gmail.com', // Direct recipient
+      to: 'yashdhudat@gmail.com', // Direct recipient
       replyTo: email,
       subject: `Portfolio Contact: ${name}`,
       text: `

@@ -1,107 +1,132 @@
 export const personalInfo = {
-  name: "Xuefeng Sun",
-  title: "Full-Stack Developer",
-  email: "xuefeng0580@gmail.com",
-  phone: "+1 (517) 940-0365",
-  location: "Toronto, ON, Canada",
-  linkedin: "https://www.linkedin.com/in/xuefeng-sun-51871b1a5/",
-  github: "https://github.com/Artan1ss/",
-  summary: "Experienced full-stack developer with a strong background in JavaScript/TypeScript, Java, and React/Next.js. Proven track record of developing scalable web applications and improving efficiency through innovative solutions.",
+  name: "Yash Dhudat",
+  title: "Final Year IT Student | Aspiring Associate Software Engineer",
+  email: "yashdhudat@gmail.com", // update with your real email
+  phone: "+91-8767544487", // optional, if you want to show
+  location: "Pune, Maharashtra, India",
+  linkedin: "https://www.linkedin.com/in/yash-dhudat-4a231b249",
+  github: "https://github.com/yashdhudat",
+  summary:
+    "Final-year IT student with hands-on experience in software engineering, AI/ML projects, and full-stack web development. Skilled in Java, Python, React, and data analytics with a proven record of internships, hackathons, and real-time project deployments. Passionate about building impactful tech solutions and eager to contribute as an Associate Software Engineer.",
 };
 
 export const education = [
   {
-    school: "New York University",
-    degree: "Master's, Computer Engineering",
-    period: "January 2022 - May 2023",
+    school: "Pravara Rural Engineering College",
+    degree: "B.E., Information Technology",
+    period: "2023 – 2026",
+    highlights: [
+      "Final Year Student, active in technical clubs and hackathons",
+      "Focused coursework: Software Engineering, Data Analytics, AI/ML",
+    ],
   },
   {
-    school: "Michigan State University",
-    degree: "Bachelor's, Computer Science",
-    period: "August 2017 - January 2022",
+    school: "MIT Polytechnic College",
+    degree: "Diploma, Computer Engineering",
+    period: "2020 – 2023",
+    highlights: [
+      "Got Pre Placement opportunity from Wipro",
+      "Focused coursework: Software Engineering, Data Analytics, AI/ML",
+    ],
   },
 ];
 
 export const experience = [
   {
-    company: "Donovan's Venom",
-    position: "Software Engineer Intern",
-    location: "New York, NY, USA",
-    period: "May 2023 - September 2024",
-    highlights: [
-      "Enhanced platform scalability and user satisfaction for 100+ paying users by engineering and maintaining front-end features using ReactJS, Angular, JavaScript, HTML, and TypeScript, while following the software development life cycle and MVC design patterns.",
-      "Improved data integrity and user management efficiency by 30% by designing and integrating SQL-based solutions with Oracle database, utilizing XML and XSLT for seamless data interchange and reporting.",
-      "Increased platform engagement and learning retention by developing and deploying robust backend APIs using Java, Spring, and FastAPI, integrating RESTful and SOAP web services, and utilizing Kafka for reliable message streaming between services.",
-      "Strengthened application reliability and maintainability by creating comprehensive unit and integration tests with JUnit and Mockito, ensuring high-quality code deliverables and validating key functionalities throughout the software development life cycle."
-    ],
-  },
-  {
-    company: "United Airlines",
-    position: "Quality Assurance Full-Stack Web Developer",
-    location: "East Lansing, MI, USA",
-    period: "September 2021 - May 2022",
-    highlights: [
-      "Increased operating efficiency by 70% by engineering a full-stack quality assurance web application using Angular, RESTful APIs, and PostgreSQL, enabling mobile electronic access to audit documentation for United Airlines auditors.",
-      "Improved document processing performance by 50% by integrating Firebase for image scanning, archiving, and retrieval, optimizing user experience and system speed.",
-      "Enhanced data accuracy and compliance by developing a TypeScript-based web scraper to automatically collect and update FAA regulatory data, storing results in MongoDB.",
-      "Ensured reliable deployment and code management by managing source code repositories and containerized deployments using Git and Docker in a collaborative team environment."
-    ],
-  },
-  {
-    company: "Starnet Technology, Ltd",
-    position: "Full-Stack Web Developer",
+    company: "Paarsh Infotech",
+    position: "Data Analyst Intern",
     location: "Remote",
-    period: "May 2019 - September 2020",
+    period: "January 2025 – July 2025",
     highlights: [
-      "Increased API processing efficiency by 50% by engineering and optimizing RESTful APIs for product data handling using Nest.js, Express.js, and SQLite, ensuring scalable and maintainable backend services.",
-      "Enabled real-time application updates by integrating RESTful APIs and WebSocket connections, significantly enhancing user experience and responsiveness across the platform.",
-      "Reduced automated endpoint attacks by over 95% by implementing CAPTCHA verification using reCAPTCHA, bolstering server security and safeguarding APIs from abuse."
+      "Built and optimized Power BI dashboards for client projects.",
+      "Cleaned and transformed large datasets to improve reporting accuracy.",
+      "Collaborated with senior analysts to extract actionable business insights.",
+    ],
+  },
+  
+  {
+    company: "MIT ERP Office",
+    position: "ERP Intern",
+    location: "Aurangabad, India",
+    period: "July 2022 – August 2022",
+    highlights: [
+      "Assisted in ERP module development and system optimization.",
+      "Automated workflows for academic record management.",
+      "Enhanced usability of ERP dashboards for internal teams.",
     ],
   },
 ];
 
 export const skills = [
-  { category: "Programming Languages", items: ["JavaScript", "TypeScript", "Java", "Python", "PHP", "C#"] },
-  { category: "Frontend", items: ["React.js", "Next.js", "Angular", "HTML/CSS", "Tailwind CSS", "Bootstrap"] },
-  { category: "Backend", items: ["Node.js", "Express.js", "Nest.js", "Spring Boot", "FastAPI"] },
-  { category: "Databases", items: ["PostgreSQL", "MongoDB", "SQLite", "Oracle", "Firebase"] },
-  { category: "DevOps & Tools", items: ["Git", "Docker", "AWS", "Microsoft Azure", "Wireshark"] },
+  {
+    category: "Programming Languages",
+    items: ["Java", "Python", "JavaScript", "TypeScript"],
+  },
+  {
+    category: "Frontend",
+    items: ["React.js", "Next.js", "Nuxt 3", "HTML/CSS", "Tailwind CSS"],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "Express.js", "SQLite", "REST APIs"],
+  },
+  {
+    category: "Data & AI/ML",
+    items: ["Power BI", "Pandas", "Scikit-learn", "YOLOv5", "OpenCV"],
+  },
+  {
+    category: "DevOps & Tools",
+    items: ["Git/GitHub", "Vercel", "AWS (basic)", "Docker (basic)"],
+  },
 ];
 
 export const projects = [
   {
-    title: "Quality Assurance Web Application",
-    description: "A full-stack application for United Airlines auditors to access documentation electronically, increasing operating efficiency by 70%.",
-    technologies: ["Java", "Angular", "PHP", "RESTful API", "Firebase"],
-    image: "/projects/capstone.png",
-    link: "http://www.capstone.cse.msu.edu/2021-08/projects/united-airlines-quality-assurance/",
+    title: "GreenRoute AI",
+    description:
+      "Real-time AI-powered delivery route optimization system focusing on sustainability and efficiency.",
+    technologies: ["Python","React", "Node.js", "SQLite", "Leaflet Maps", "AI Models"],
+    image: "/projects/greenroute.png",
+    link: "https://github.com/yourusername/greenroute-ai",
   },
   {
-    title: "Music Education Platform",
-    description: "Web-based platform for music education serving 100+ users with features for learning retention and engagement.",
-    technologies: ["React", "Spring Boot", "JavaScript", "Oracle", "Kafka"],
-    image: "/projects/music.png",
-    link: "https://thedonovanspianoroom.com/",
+    title: "Virtual Canvas Painter",
+    description:
+      "YOLOv5 + Mediapipe hand gesture-based drawing app with real-time webcam input.",
+    technologies: ["Python", "YOLOv5", "OpenCV", "Mediapipe"],
+    image: "/projects/virtualcanvas.png",
+    link: "https://github.com/yashdhudat/Virtural-Canvas-Painter",
   },
   {
-    title: "Payment Management System",
-    description: "Web-based platform for payment management with features for payment processing and analytics.",
-    technologies: ["Angular", "TypeScript", "PostgreSQL","Node.js", "Express.js"],
-    image: "/projects/payment.png",
-    link: "https://payment-management-omega.vercel.app/",
+    title: "DeepTarget AI",
+    description:
+      "Mineral exploration predictive mapping using AI/ML and depth modeling (IndiaAI Hackathon).",
+    technologies: ["Python", "Geospatial ML", "Remote Sensing"],
+    image: "/projects/deeptarget.jpg",
+    link: "https://github.com/yourusername/deeptarget-ai",
   },
   {
-    title: "E-commerce Online Store",
-    description: "Real-time dashboard for product data and analytics with responsive design.",
-    technologies: ["JavaScript", "React", "Node.js", "PostgreSQL","Supabase"],
-    image: "/projects/online-store.png",
-    link: "https://online-store-rho-rust.vercel.app/",
+    title: "COVID-19 Vaccination Data Analysis",
+    description:
+      "Analyzed vaccination datasets to find trends and patterns using ML and visualizations.",
+    technologies: ["Python", "Pandas", "Matplotlib", "Scikit-learn"],
+    image: "/projects/covid.jpg",
+    link: "https://github.com/yourusername/covid19-analysis",
+  },
+  {
+    title: "Social Media Post Generator",
+    description:
+      "Nuxt 3 + Gemini API app to auto-generate posts for Twitter/Facebook from articles.",
+    technologies: ["Nuxt 3", "Gemini API", "TailwindCSS"],
+    image: "/projects/social.jpg",
+    link: "https://github.com/yourusername/social-media-generator",
   },
 ];
 
 export const contactInfo = {
-  email: "xuefeng0580@gmail.com",
-  phone: "+1 (517) 940-0365",
-  linkedin: "linkedin.com/in/xuefeng-sun-51871b1a5/",
-  location: "Toronto, ON, Canada",
-}; 
+  email: "yash.dhudat@example.com",
+  phone: "+91-8767544487",
+  linkedin: "https://www.linkedin.com/in/yash-dhudat-4a231b249",
+  github: "https://github.com/yashdhudat",
+  location: "Pune, Maharashtra, India",
+};

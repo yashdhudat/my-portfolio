@@ -7,7 +7,7 @@ export default function TestImage() {
       <h1 className="text-2xl mb-4">Image Test Page</h1>
       <div className="w-80 h-80 border border-gray-300 relative">
         <Image 
-          src="/xuefeng-palau.jpg" 
+          src="/yash.jpeg" 
           alt="Test image" 
           fill
           style={{ objectFit: 'contain' }}

@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Xuefeng Sun | Software Engineer",
-  description: "Personal portfolio of Xuefeng Sun, a full-stack developer specializing in Java, React, and Next.js",
+  title: "Yash Anil Dhduat | Software Engineer",
+  description: "Personal portfolio of Yash Anil Dhduat, a full-stack developer specializing in Java, React, and Next.js",
 };
 
 export default function RootLayout({

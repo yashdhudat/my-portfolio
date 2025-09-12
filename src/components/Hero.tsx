@@ -30,8 +30,8 @@ export default function Hero() {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-              <span className="text-gray-800 dark:text-white">Full-Stack Javascript </span>
-              <span className="text-gradient">developer</span>
+              <span className="text-gray-800 dark:text-white">Full-Stack</span>
+              <span className="text-gradient"> Data Enthuziast</span>
             </h1>
             
             <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto">
@@ -42,7 +42,7 @@ export default function Hero() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/Xuefeng_Sun_Resume.pdf"
+                href="/Yash_Resume Data.pdf"
                 download
                 className="btn btn-primary gap-2"
               >
