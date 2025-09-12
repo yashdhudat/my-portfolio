@@ -1,99 +1,119 @@
-# Modern Portfolio Website
+# 🌐 Yash Dhudat – Modern Portfolio Website  
 
-A modern, animated personal portfolio website built with Next.js, TailwindCSS, and Framer Motion. This website showcases a developer's skills, experience, projects, and contact information.
+A modern, animated personal portfolio website built with **Next.js 14**, **TailwindCSS**, and **Framer Motion**.  
+This website showcases my skills, projects, experience, and contact details in a clean and professional way.  
 
-![Portfolio Preview](preview.png)
+---
 
-## Features
+## 🚀 Live Demo  
+👉 [View My Portfolio](https://my-portfolio.vercel.app) *(Deployed with Vercel)*  
 
-- **Responsive Design**: Works perfectly on all device sizes
-- **Modern UI**: Clean and professional design with animations
-- **Dark/Light Mode**: Theme switching functionality 
-- **Smooth Scrolling**: Navigation with smooth scrolling to sections
-- **Animated Components**: Beautiful animations using Framer Motion
-- **Contact Form**: Interactive contact form with validation
-- **Project Showcase**: Interactive project cards with modal details
-- **Performance Optimized**: Fast loading and rendering
+---
 
-## Technologies Used
+## 📸 Portfolio Preview  
+![Portfolio Preview](preview.png)  
 
-- **Next.js 14**: React framework for production
-- **TypeScript**: Type-safe JavaScript
-- **Tailwind CSS**: Utility-first CSS framework
-- **Framer Motion**: Animation library
-- **React Icons**: Icon library
-- **React Scroll**: Smooth scrolling functionality
-- **React Intersection Observer**: Trigger animations on scroll
+---
 
-## Getting Started
+## ✨ Features  
+- 📱 **Responsive Design** – Works seamlessly on all device sizes  
+- 🎨 **Modern UI** – Clean and professional design with smooth animations  
+- 🌗 **Dark/Light Mode** – Theme switching functionality  
+- 🖱️ **Smooth Scrolling** – Easy navigation between sections  
+- ⚡ **Animated Components** – Beautiful transitions with Framer Motion  
+- 📬 **Contact Form** – Interactive contact form with validation  
+- 💼 **Project Showcase** – Interactive project cards with modal details  
+- 🚀 **Performance Optimized** – Fast loading and rendering  
 
-### Prerequisites
+---
 
-- Node.js 18+ installed
-- npm or yarn
+## 🛠️ Technologies Used  
+- [Next.js 14](https://nextjs.org/) – React framework for production  
+- [TypeScript](https://www.typescriptlang.org/) – Type-safe JavaScript  
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework  
+- [Framer Motion](https://www.framer.com/motion/) – Animation library  
+- [React Icons](https://react-icons.github.io/react-icons/) – Icon library  
+- [React Scroll](https://www.npmjs.com/package/react-scroll) – Smooth scrolling  
+- [React Intersection Observer](https://www.npmjs.com/package/react-intersection-observer) – Scroll animations  
 
-### Installation
+---
 
-1. Clone the repository:
+## 📂 Project Structure  
+
+my-portfolio/
+├── public/ # Static files (profile, resume, project images)
+├── app/ # Next.js app directory
+├── components/ # Reusable React components
+├── data/ # Resume and content data
+├── styles/ # Global styles
+├── hooks/ # Custom React hooks
+├── utils/ # Utility functions
+├── tailwind.config.js # Tailwind configuration
+└── package.json # Project dependencies
+
+yaml
+Copy code
+
+---
+
+## ⚙️ Getting Started  
+
+### Prerequisites  
+- Node.js 18+  
+- npm or yarn  
+
+### Installation  
 ```bash
-git clone https://github.com/yourusername/portfolio-website.git
-```
+# Clone the repository
+git clone https://github.com/yashdhudat/my-portfolio.git
 
-2. Navigate to the project directory:
-```bash
-cd portfolio-website
-```
+# Navigate into the project
+cd my-portfolio
 
-3. Install dependencies:
-```bash
+# Install dependencies
 npm install
 # or
 yarn install
-```
 
-4. Run the development server:
-```bash
+# Run the development server
 npm run dev
 # or
 yarn dev
-```
+Open http://localhost:3000 in your browser.
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+🎨 Customization
+Update your personal information in src/data/resume.ts
 
-## Project Structure
+Add your profile picture → public/profile.png
 
-```
-portfolio-site/
-├── public/           # Static files
-│   ├── app/          # Next.js app directory
-│   ├── components/   # React components
-│   ├── data/         # Resume and content data
-│   ├── styles/       # Global styles
-│   ├── hooks/        # Custom React hooks
-│   └── utils/        # Utility functions
-├── tailwind.config.js # Tailwind configuration
-└── package.json      # Project dependencies
-```
+Add your resume → public/YashDhudat_Resume.pdf
 
-## Customization
+Add project images → public/projects/
 
-1. Update your personal information in `src/data/resume.ts`
-2. Add your profile picture to `public/profile.png`
-3. Add your resume PDF to `public/YourName_Resume.pdf`
-4. Add project images to `public/projects/`
-5. Customize colors and styling in `tailwind.config.js` and `src/app/globals.css`
+Customize colors & styles → tailwind.config.js and src/app/globals.css
 
-## Deployment
+🚀 Deployment
+The easiest way to deploy is via Vercel:
 
-The easiest way to deploy your Next.js app is using [Vercel](https://vercel.com/), the platform from the creators of Next.js.
+Connect your GitHub repo on Vercel.
 
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Deploy with 1 click.
 
-## License
+Get your live portfolio link instantly.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+📜 License
+This project is licensed under the MIT License – see the LICENSE file for details.
 
-## Acknowledgments
+🙏 Acknowledgments
+Design inspired by Safet Pojskic's portfolio
 
-- Design inspired by [Safet Pojskic's portfolio](https://safetpojskic.com)
-- Icons from [React Icons](https://react-icons.github.io/react-icons/)
+Icons from React Icons
+
+yaml
+Copy code
+
+---
+
+👉 Once you deploy to **Vercel**, you just need to update the **Live Demo link**.  
+
+Do you want me to also **add a section highlighting your skills & certifications** (like Java, Python, ML
