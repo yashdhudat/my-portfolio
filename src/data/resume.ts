@@ -87,7 +87,7 @@ export const projects = [
       "Real-time AI-powered delivery route optimization system focusing on sustainability and efficiency.",
     technologies: ["Python","React", "Node.js", "SQLite", "Leaflet Maps", "AI Models"],
     image: "/projects/greenroute.png",
-    link: "https://github.com/yourusername/greenroute-ai",
+    link: "https://github.com/yashdhudat/Greenroute-ai",
   },
   {
     title: "Virtual Canvas Painter",
@@ -98,12 +98,12 @@ export const projects = [
     link: "https://github.com/yashdhudat/Virtural-Canvas-Painter",
   },
   {
-    title: "DeepTarget AI",
+    title: "Automated Course Generator",
     description:
-      "Mineral exploration predictive mapping using AI/ML and depth modeling (IndiaAI Hackathon).",
-    technologies: ["Python", "Geospatial ML", "Remote Sensing"],
-    image: "/projects/deeptarget.jpg",
-    link: "https://github.com/yourusername/deeptarget-ai",
+      "A Streamlit-based tool that generates complete course content from any article or topic using AI. It creates structured outlines, detailed lessons, and quizzes, and exports the content into downloadable PDFs.",
+    technologies: ["Python", "Genrative-AI", "Streamlit","API"],
+    image: "/projects/course.png",
+    link: "https://github.com/yashdhudat/automated-course-generator",
   },
   {
     title: "COVID-19 Vaccination Data Analysis",
@@ -113,14 +113,9 @@ export const projects = [
     image: "/projects/covid.jpg",
     link: "https://github.com/yourusername/covid19-analysis",
   },
-  {
-    title: "Social Media Post Generator",
-    description:
-      "Nuxt 3 + Gemini API app to auto-generate posts for Twitter/Facebook from articles.",
-    technologies: ["Nuxt 3", "Gemini API", "TailwindCSS"],
-    image: "/projects/social.jpg",
-    link: "https://github.com/yourusername/social-media-generator",
-  },
+  
+
+
 ];
 
 export const contactInfo = {

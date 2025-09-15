@@ -119,7 +119,7 @@ export default function About() {
                       rel="noopener noreferrer"
                       className="font-medium text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-blue-400 transition-colors"
                     >
-                      linkedin.com/in/xuefeng-sun-51871b1a5
+                      linkedin.com/yash-dhudat
                     </a>
                   </div>
                 </div>
