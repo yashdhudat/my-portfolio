@@ -119,7 +119,7 @@ export const projects = [
 ];
 
 export const contactInfo = {
-  email: "yash.dhudat@example.com",
+  email: "yashdhudat@gmail.com",
   phone: "+91-8767544487",
   linkedin: "https://www.linkedin.com/in/yash-dhudat-4a231b249",
   github: "https://github.com/yashdhudat",
